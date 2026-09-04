@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fsm-mzi-sim"
+version = "0.1.0"
+description = "Configurable quadrature-channel Mach-Zehnder interferometer simulation with fast-steering mirror jitter."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "matplotlib>=3.7",
+  "pandas>=2.0",
+  "pillow>=10.0",
+  "jupyter>=1.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["fsm_mzi_sim*"]
